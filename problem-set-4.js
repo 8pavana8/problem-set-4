@@ -5,6 +5,7 @@
 function hello() {
 
   // WRITE YOUR EXERCISE 1 CODE HERE
+  document.getElementByID ("output1).innerHTML="Hello, AP Computer Science Principles!";
 
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
@@ -25,6 +26,8 @@ function helloAgain() {
   // do not need to re-declare it, only assign it a value.
 
   // WRITE YOUR EXERCISE 2 CODE HERE
+  name=prompt ("Please Enter Your Name");
+  document.getElementById ("output2").innerHTML="Hello, + name + "!";
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -45,7 +48,8 @@ function celsius() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 3 CODE HERE
-
+let fahrenheit = ((cels*9)/5 + 32).toFixed(2);
+document.getElementById ("output3").innerHTML= cels + "degrees Celsius equals" + fahrenheit + degrees Fahrenheit.";
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
@@ -65,7 +69,8 @@ function fahrenheit() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 4 CODE HERE
-
+let celsius = ((fahr-32)*5/9).tofixed(2);
+document.getElementById ("output4").innerHTML=fahr + "degrees Fahrenheit equals" + celsius + "degrees Celsius.";
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY
@@ -89,7 +94,14 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 5 CODE HERE
+let miles=Math.floor (inches/63360);
+let yards=Math.floor ((inches - (miles*63360))/36);
+let feet+Math.floor  ((inches- (miles*63360) - (yards*36))12;
+inches=Math.floor  ((inches - (miles*63360) - (yards*36) - (feet*12))/1);
+document.getElementById ("output5").innerHTML="Miles:" + miles + "<br/>Yards: + yards + "<br/>Feet:" + feet + <br/>Inches:" +inches;
+  
 
+  
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
@@ -113,6 +125,10 @@ function centimeters() {
   /////////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 6 CODE HERE
+  let kmeters=Math.floor (centimeters/100000);
+  let meters=Math.floor((centimeters - (kmeters*100000))/100);
+  centimeters=Math.floor ((centimeters - (kmeters*100000) - (meters*100))/1);
+  document.getElementById("output6").innerHTML= "Kilometers: +kmeters +"<br/>Meters:" + meters + "<br/>Centimeters: " + centimeters;
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
